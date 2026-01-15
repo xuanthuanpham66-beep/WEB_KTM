@@ -1,17 +1,13 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
-    color: #333;
+* {
+    box-sizing: border-box;
 }
 
-/* Phần Banner và Cards [cite: 11, 24] */
-.banner {
-    background: url('tải xuống.jpg') no-repeat center center/cover;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
     padding: 20px;
+    color: #2d3436;
 }
 
 .container {
@@ -19,64 +15,57 @@ body {
     gap: 20px;
 }
 
-.card {
-    background: #fff;
-    padding: 25px;
-    width: 280px;
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+.sidebar {
+    flex: 30%;
+    background-color: white;
+    padding: 20px;
+    color: #636e72;
 }
 
-.icon {
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    color: white; margin-bottom: 15px;
+.main-content {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
 }
 
-.bg-blue { background: #007bff; }
-.bg-green { background: #28a745; }
-.bg-orange { background: #ffc107; }
-
-/* Phần Basic Elements [cite: 18, 19, 24] */
-.basic-elements {
-    padding: 50px 10%;
-    background: #fff;
+h1 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 28px;
 }
 
-.basic-elements h1 { font-size: 28px; margin-bottom: 10px; }
-
-.button-group, .button-group-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px 0;
+h3 {
+    color: #0984e3;
+    margin-top: 0;
+    font-size: 20px;
 }
 
-/* Các kiểu nút bấm [cite: 19, 20, 21] */
-.btn {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.3s;
+h5 {
+    color: #b2bec3;
+    margin-top: 0;
+    font-weight: 400;
+    font-style: italic;
 }
 
-.btn-default { background: #e7e7e7; color: #333; }
-.btn-blue { background: #007bff; color: white; }
-.btn-green { background: #28a745; color: white; }
-.btn-orange { background: #ffc107; color: white; }
-.btn-rounded { background: #17a2b8; color: white; border-radius: 25px; }
-.btn-icon { background: #007bff; color: white; display: flex; align-items: center; gap: 5px; }
-.btn-simple { background: transparent; border: 1px solid #ccc; }
+.sidebar img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    display: block;
+}
 
-/* Phần Links */
-.link { text-decoration: none; font-size: 14px; font-weight: bold; }
-.link.blue { color: #007bff; }
-.link.gray { color: #6c757d; }
-.link.cyan { color: #17a2b8; }
-.link.red { color: #dc3545; }
-.link.yellow { color: #ffc107; }
+.banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 15px 0;
+    display: block;
+}
 
-p { font-size: 14px; color: #555; line-height: 1.5; }
+p {
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
